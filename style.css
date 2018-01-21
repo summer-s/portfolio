@@ -32,7 +32,7 @@ ul {
 
 #intro {
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 h1,
@@ -65,13 +65,17 @@ h2 span {
 #info {
     margin-left: 10%;
     max-width: 425px;
+    font-weight: 300;
+}
+
+#info div:first-of-type {
+    margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {
     #info {
         margin-left: 0;
         max-width: auto;
-        margin-bottom: 50px;
     }
 }
 
@@ -79,7 +83,7 @@ h3 {
     font-style: italic;
     font-weight: 400;
     font-size: 1.7em;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 h4 {
@@ -91,25 +95,39 @@ h4 {
     margin-bottom: 25px;
 }
 
-.workList li {
+.homeList li {
     margin-bottom: 13px;
 }
 
-.workList li:last-of-type {
+.homeList li:last-of-type {
     margin-bottom: 40px;
 }
 
-.workList li,
+.homeList li,
 p {
     font-size: 1.15em;
 }
 
 a {
     color: #828282;
+    font-weight: 400;
     transition: 1s;
 }
 
 a:hover {
-    color: mediumpurple;
+    color: #009efd;
     transition: .3s;
+}
+
+#accent {
+    background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
+    height: 2px;
+    width: 80px;
+    margin-top: -15px;
+}
+
+@media (max-width: 600px) {
+    #accent {
+        display: none;
+    }
 }
