@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Chivo';
+    color: #4F4F4F;
+    font-size: 16px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 40px 10% 0 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#socialMedia li {
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .7em;
+    letter-spacing: .15em;
+    color: #828282;
+}
+
+#intro {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h1,
+h2 {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+h2 {
+    color: #828282;
+    margin-top: 10px;
+    font-size: 2.25em;
+}
+
+h2 span {
+    font-weight: 300;
+}
+
+#homeContainer {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #homeContainer {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+#info {
+    margin-left: 10%;
+    max-width: 425px;
+}
+
+@media (max-width: 600px) {
+    #info {
+        margin-left: 0;
+        max-width: auto;
+        margin-bottom: 50px;
+    }
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7em;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: #828282;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .9em;
+    margin-bottom: 25px;
+}
+
+.workList li {
+    margin-bottom: 13px;
+}
+
+.workList li:last-of-type {
+    margin-bottom: 40px;
+}
+
+.workList li,
+p {
+    font-size: 1.15em;
+}
+
+a {
+    color: #828282;
+    transition: 1s;
+}
+
+a:hover {
+    color: mediumpurple;
+    transition: .3s;
+}
