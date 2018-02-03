@@ -75,7 +75,7 @@ ul {
 }
 
 #intro {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 h1,
@@ -86,7 +86,8 @@ h2 {
 
 @media (max-width: 650px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        padding-top: 20px;
     }
 }
 
@@ -98,7 +99,7 @@ h2 {
 
 @media (max-width: 650px) {
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
         margin-top: 10px;
     }
 }
@@ -113,6 +114,7 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: 35px;
 }
+
 @media (max-width: 650px) {
     h3 {
         font-size: 1.5rem;
@@ -144,6 +146,7 @@ a:hover {
 p {
     line-height: 1.25;
 }
+
 
 
 /* HOME STYLES */
@@ -190,10 +193,11 @@ p {
 }
 
 @media (max-width: 650px) {
-    .homeList li, p {
+    .homeList li,
+    p {
         font-size: 1.15rem;
     }
-    
+
     .homeList li {
         margin-bottom: 20px;
     }
@@ -213,10 +217,10 @@ p {
 }
 
 @media (max-width: 600px) {
-    #homeTools li {
-        margin-bottom: 10px;
+    #homeTools {
+        display: none;
     }
-    
+
     #homeTools li:last-of-type {
         margin-bottom: 55px;
     }
