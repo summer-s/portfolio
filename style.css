@@ -9,11 +9,37 @@ html {
     color: #4F4F4F;
     font-size: 16px;
     font-size: 1rem;
-    background-color: #f9f9f9;
+    height: 100%;
+
 }
 
-.container {
-    margin: 40px 10% 0 10%;
+body#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.homeContainer {
+    margin: 50px auto;
+    margin-top: 0;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 40px 40px 0 40px;
+    ;
+    border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    .homeContainer {
+        margin: 0;
+        width: 100%;
+        padding: 5%;
+        border-radius: 0;
+    }
 }
 
 ul {
@@ -30,9 +56,25 @@ ul {
     color: #828282;
 }
 
+#socialMedia {
+    padding: 30px 0 10px 0;
+    align-self: center;
+    width: 80%;
+}
+
+@media (max-width: 650px) {
+    #socialMedia li {
+        padding: 0;
+        margin-left: 10;
+    }
+    #socialMedia {
+        padding: 10px 0px 10px 5%;
+        align-self: baseline;
+    }
+}
+
 #intro {
-    margin-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 h1,
@@ -41,9 +83,9 @@ h2 {
     font-weight: 400;
 }
 
+
 h2 {
     color: #828282;
-    margin-top: 10px;
     font-size: 2.25rem;
 }
 
@@ -83,6 +125,9 @@ p {
     line-height: 1.25;
 }
 
+
+/* HOME STYLES */
+
 #homeContainer {
     display: flex;
 }
@@ -95,7 +140,7 @@ p {
 }
 
 #info {
-    margin-left: 10%;
+    margin-left: 15%;
     max-width: 425px;
     font-weight: 300;
 }
@@ -135,4 +180,47 @@ p {
     #accent {
         display: none;
     }
+}
+
+
+/*WORK STYLES*/
+
+.workNav {
+    background-color: lightgrey;
+    height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.workNav ul {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.workNav li {
+    display: inline;
+    font-size: .75rem;
+    font-weight: 400;
+    font-size: .65rem;
+    letter-spacing: .125rem;
+    color: #828282;
+    margin-left: 25px;
+}
+
+.workNav li:first-of-type {
+    margin-right: auto;
+    margin-left: 0;
+    font-weight: 700;
+}
+
+.workNav a:first-of-type {
+    font-weight: 700;
+}
+
+.workContainer {
+    background-color: white;
 }
