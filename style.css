@@ -419,3 +419,11 @@ p {
     padding: 3%;
     image-rendering: -webkit-optimize-contrast;
 }
+
+.imgDesc {
+    font-size: .8em;
+    font-style: italic;
+    opacity: .75;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
