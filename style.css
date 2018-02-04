@@ -76,8 +76,9 @@ ul {
     #socialMedia {
         margin: 0;
         width: 95%;
-        padding: 15px 0px 15px 0;
-        ;
+        height: 50px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -298,6 +299,8 @@ p {
 
 .workNav a:first-of-type {
     font-weight: 700;
+    padding: 5px;
+    margin-left: 0;
 }
 
 .workContainer {
