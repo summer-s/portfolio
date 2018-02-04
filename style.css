@@ -418,4 +418,5 @@ p {
 
 .imgGroup img {
     padding: 3%;
+    image-rendering: -webkit-optimize-contrast;
 }
