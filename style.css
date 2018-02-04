@@ -38,7 +38,7 @@ body#home {
         margin: 0px;
         width: 95%;
         padding: 5%;
-        
+
     }
 }
 
@@ -76,7 +76,8 @@ ul {
     #socialMedia {
         margin: 0;
         width: 95%;
-        padding: 15px 0px 15px 0;;
+        padding: 15px 0px 15px 0;
+        ;
     }
 }
 
@@ -112,7 +113,7 @@ h2 {
 h2 {
     color: #828282;
     opacity: .75;
-    
+
 }
 
 @media (max-width: 650px) {
@@ -258,12 +259,21 @@ p {
     justify-content: center
 }
 
+
 .workNav ul {
     width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 650px) {
+    .workNav ul {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
 
 .workNav li {
     display: inline;
@@ -275,10 +285,15 @@ p {
     margin-left: 25px;
 }
 
+@media (max-width: 450px) {
+    .workNav li {
+        margin-left: 20px;
+    }
+}
+
 .workNav li:first-of-type {
     margin-right: auto;
     margin-left: 0;
-    font-weight: 700;
 }
 
 .workNav a:first-of-type {
@@ -292,6 +307,14 @@ p {
     padding-top: 50px;
 }
 
+@media (max-width: 650px) {
+    .workContainer {
+        margin: 0 auto;
+        padding: 5%;
+    }
+}
+
+
 .top div {
     display: flex;
     flex-direction: row;
@@ -299,9 +322,25 @@ p {
     margin-bottom: 75px;
 }
 
+@media (max-width: 650px) {
+    .top div {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
 .top div p {
     font-weight: 400;
 }
+
+@media (max-width: 650px) {
+    .top div p {
+        margin-top: 25px;
+    }
+}
+
 
 .stats {
     font-size: .8rem;
@@ -310,6 +349,12 @@ p {
     opacity: .5;
     margin-left: 60px;
     font-weight: 400;
+}
+
+@media (max-width: 650px) {
+    .stats {
+        margin: 0;
+    }
 }
 
 .workContainer h1 {
@@ -328,8 +373,24 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-size: .85em;
     letter-spacing: .1rem;
 }
+@media (max-width: 650px) {
+    #prevnext {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+}
 
+.image {
+    background-color: grey;
+    margin: 20px auto;
+}
+
+.large {
+    width: 100%;
+    height: 400px;
+}
