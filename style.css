@@ -374,6 +374,10 @@ p {
     font-weight: 300;
 }
 
+.workContainer p+p {
+    padding-top: 10px;
+}
+
 .workContainer h3 {
     margin-bottom: 25px;
 }
@@ -426,4 +430,10 @@ p {
     opacity: .75;
     margin-top: -15px;
     margin-bottom: 20px;
+    max-width: 70%;
+}
+
+.soloImage {
+    width: 100%;
+    margin: 20px auto;
 }
