@@ -268,7 +268,7 @@ p {
     justify-content: flex-end;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .workNav ul {
         width: 100%;
         padding: 0 5%;
@@ -310,7 +310,7 @@ p {
     padding-top: 50px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .workContainer {
         margin: 0 auto;
         padding: 5%;
@@ -396,12 +396,26 @@ p {
     }
 }
 
-.image {
-    background-color: grey;
-    margin: 20px auto;
+.imgGroup {
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 25px auto;
 }
 
-.large {
-    width: 100%;
-    height: 400px;
+.imgGroupChild {
+    min-width: 275px;
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.imgGroup img {
+    padding: 3%;
 }
