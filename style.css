@@ -358,6 +358,10 @@ p {
     font-weight: 400;
 }
 
+.statsAlone {
+    margin-left: 0;
+}
+
 @media (max-width: 750px) {
     .stats {
         margin: 0;
