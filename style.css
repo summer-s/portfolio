@@ -306,18 +306,19 @@ p {
     background-color: white;
     margin: 0 auto;
     padding-top: 50px;
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .textWidth {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 @media (max-width: 750px) {
     .workContainer {
         margin: 0 auto;
-        padding: 5%;
+        padding: 0 5%;
+        
     }
 }
 
@@ -328,7 +329,7 @@ p {
     margin-bottom: 75px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .top div {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -341,7 +342,7 @@ p {
     font-weight: 400;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .top div p {
         margin-top: 25px;
     }
@@ -357,7 +358,7 @@ p {
     font-weight: 400;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .stats {
         margin: 0;
     }
@@ -367,7 +368,7 @@ p {
     font-size: 3rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .workContainer h1 {
         font-size: 2.5rem;
         padding-top: 20px;
@@ -378,7 +379,7 @@ p {
     font-weight: 300;
 }
 
-.workContainer p+p {
+.workContainer p + p {
     padding-top: 10px;
 }
 
@@ -404,11 +405,10 @@ p {
 }
 
 .imgGroup {
-    background-color: #f2f2f2;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
     margin: 25px auto;
@@ -416,27 +416,39 @@ p {
 
 .imgGroupChild {
     min-width: 275px;
-    width: 50%;
+    width: 48.5%;
     height: 50%;
-    padding: 5%;
-    flex-grow: 1;
-    border-radius: 10px;
 }
 
-.imgGroup img {
-    padding: 3%;
+@media (max-width: 650px) {
+    .imgGroup {
+        margin-top: 0px
+    }
+    .imgGroupChild {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+img {
     image-rendering: -webkit-optimize-contrast;
 }
 
+.screen {
+    box-shadow: 0px 2px 5px lightgrey;
+    border-radius: 2px;
+}
+
 .imgDesc {
-    font-size: .8em;
+    font-size: .75em;
     font-style: italic;
-    opacity: .75;
+    opacity: .7;
     margin-left: 0;
     margin-top: -15px;
     margin-bottom: 20px;
     max-width: 700px;
-    
+
 }
 
 .soloImage {
@@ -444,7 +456,7 @@ p {
     margin: 20px auto;
 }
 
-.endText p{
+.endText p {
     font-size: 1.25rem;
     padding: 4%;
     margin: 50px auto 0 auto;
