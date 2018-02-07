@@ -426,11 +426,14 @@ p {
 
 @media (max-width: 650px) {
     .imgGroup {
-        margin-top: 0px
+        margin-top: 40px;
     }
     .imgGroupChild {
         width: 100%;
         margin-top: 30px;
+    }
+    .imgGroupChild:first-of-type {
+        margin-top: 0px;
     }
 }
 
