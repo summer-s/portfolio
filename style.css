@@ -306,6 +306,7 @@ p {
     background-color: white;
     margin: 0 auto;
     padding-top: 50px;
+    
     max-width: 750px;
 }
 
@@ -314,7 +315,7 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
     .workContainer {
         margin: 0 auto;
         padding: 0 5%;
@@ -325,7 +326,7 @@ p {
 .top div {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 75px;
 }
 
@@ -360,6 +361,7 @@ p {
 
 .statsAlone {
     margin-left: 0;
+    margin-top: -15px;
 }
 
 @media (max-width: 750px) {
@@ -440,11 +442,12 @@ p {
 
 img {
     image-rendering: -webkit-optimize-contrast;
-}
-
-.screen {
     box-shadow: 0px 2px 5px lightgrey;
     border-radius: 2px;
+}
+
+.noShadow {
+    box-shadow: none;
 }
 
 .imgDesc {
@@ -480,6 +483,16 @@ img {
 .textWidth + img , .imgGroup {
     margin-top: 40px;
 }
+
+.soloImage + .imgGroup {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.imgGroup + p {
+    margin-top: 30px;
+}
+
 .endText p {
     font-size: 1.25rem;
     padding: 4%;
