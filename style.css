@@ -257,7 +257,11 @@ p {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1;
 }
 
 
@@ -305,7 +309,7 @@ p {
 .workContainer {
     background-color: white;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 100px;
     
     max-width: 750px;
 }
