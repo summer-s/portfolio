@@ -395,6 +395,10 @@ p {
     margin-bottom: 20px;
 }
 
+.workContainer h4 {
+    margin-top: 75px;
+}
+
 #prevnext {
     display: flex;
     justify-content: space-between;
@@ -462,6 +466,7 @@ img {
 
 }
 
+
 .soloImage {
     width: 100%;
     margin: 20px auto;
@@ -499,6 +504,18 @@ img {
 
 .imgGroup + .imgGroup {
     margin-top: 0;
+}
+
+
+.underText {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.underText + .imgDesc {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .endText p {
