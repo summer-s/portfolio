@@ -167,6 +167,10 @@ p {
     line-height: 1.35;
 }
 
+strong {
+    font-weight: 400;
+}
+
 
 
 /* HOME STYLES */
@@ -359,6 +363,7 @@ p {
     opacity: .5;
     margin-left: 60px;
     font-weight: 400;
+    display: none;
 }
 
 .statsAlone {
@@ -542,3 +547,39 @@ img {
 .newSection {
     margin-top: 75px;
 }
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: .10rem;
+    font-weight: 400;
+    font-size: .7rem;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: grey;
+    margin-top: 7px;
+    transition: none;
+    display: inline-block;
+}
+
+.button:hover {
+    color: grey;
+    transition: none;
+}
+
+.top + .buttonGroup {
+    margin-top: -60px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 750px) {
+    .top + .buttonGroup {
+        margin-top: -40px;
+    }
+}
+
+
+.buttonGroup .button:first-child{
+    margin-right: 3%;
+}
+
