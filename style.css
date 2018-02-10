@@ -400,6 +400,14 @@ p {
     margin-bottom: 20px;
 }
 
+.buttonGroup + h3 {
+    margin-top: 100px;
+}
+
+.top + h3{
+    margin-top: 100px;
+}
+
 .workContainer h4 {
     margin-top: 75px;
 }
