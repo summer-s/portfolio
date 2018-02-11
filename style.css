@@ -10,91 +10,10 @@ html {
     font-size: 16px;
     font-size: 1rem;
     height: 100%;
-
-}
-
-body#home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e0e0e0;
-    min-height: 100%;
-    flex-direction: column;
-}
-
-.homeContainer {
-    margin: 50px auto;
-    margin-top: 0;
-    width: 80%;
-    max-width: 1200px;
-    background-color: white;
-    padding: 40px 60px 0 60px;
-    ;
-    border-radius: 5px;
-}
-
-@media (max-width: 850px) {
-    .homeContainer {
-        margin: 0px;
-        width: 95%;
-        padding: 5%;
-
-    }
-}
-
-@media (max-width: 650px) {
-    .homeContainer {
-        margin: 0;
-        width: 100%;
-        padding: 5%;
-        border-radius: 0;
-    }
 }
 
 ul {
     list-style-type: none;
-}
-
-#socialMedia li {
-    display: inline;
-    margin-right: 25px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: .65rem;
-    letter-spacing: .125rem;
-    color: #828282;
-}
-
-#socialMedia {
-    padding: 30px 0 10px 0;
-    align-self: center;
-    width: 80%;
-    max-width: 1200px;
-}
-
-@media (max-width: 850px) {
-    #socialMedia {
-        margin: 0;
-        width: 95%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (max-width: 650px) {
-    #socialMedia li {
-        padding: 0;
-        margin-left: 10;
-    }
-    #socialMedia {
-        padding: 10px 0px 10px 5%;
-        align-self: baseline;
-    }
-}
-
-#intro {
-    margin-bottom: 55px;
 }
 
 h1,
@@ -110,11 +29,10 @@ h2 {
     }
 }
 
-
 h2 {
     color: #828282;
     opacity: .75;
-
+    font-size: 2.25rem;
 }
 
 @media (max-width: 650px) {
@@ -173,16 +91,119 @@ strong {
 
 
 
+
 /* HOME STYLES */
 
-#homeContainer {
+
+body#home {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    min-height: 100%;
+    flex-direction: column;
+}
+@media (max-width: 550px) {
+    body#home {
+        background-color: white;
+    }
 }
 
-@media (max-width: 650px) {
-    #homeContainer {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+.homeContainer {
+    margin: 0px auto;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 40px 60px 0 60px;
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .homeContainer {
+        margin-bottom: 50px;
+        width: 80%;
+        padding: 5% 5% -45px 5%;
+    }
+}
+
+@media (max-width: 550px) {
+    .homeContainer {
+        margin-bottom: 0;
+        width: 100%;
+        padding: 0 5%;
+        border-radius: 0;
+        height: 100vh;
+    }
+}
+
+#socialMedia li {
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .65rem;
+    letter-spacing: .125rem;
+    color: #828282;
+}
+
+#socialMedia {
+    padding: 30px 0 10px 0;
+    width: 80%;
+    max-width: 1000px;
+}
+
+@media (max-width: 850px) {
+    #socialMedia {
+        margin: 0 auto;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 850px) {
+    #socialMedia li {
+        padding: 0;
+    }
+    #socialMedia {
+        padding: 10px 0px 10px 5%;
+        align-self: baseline;
+    }
+}
+@media (max-width: 550px) {
+    #socialMedia {
+        margin: 0;
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+}
+
+
+#intro {
+    margin-bottom: 55px;
+}
+@media (max-width: 550px) {
+    #intro {
+        padding-top: 30px;
+    }
+}
+
+.work {
+    display: flex;
+    justify-content: space-between
+}
+
+.workSection {
+    width: 30%;
+}
+
+@media (max-width: 850px) {
+    .work {
+        flex-direction: column;
+    }
+    .workSection {
+        width: 100%;
     }
 }
 
@@ -190,6 +211,7 @@ strong {
     margin-left: 25%;
     max-width: 425px;
     font-weight: 300;
+    display: none;
 }
 
 #info div:first-of-type {
@@ -209,8 +231,7 @@ strong {
     }
 }
 
-.homeList li,
-p {
+.homeList li {
     font-size: 1rem;
 }
 
@@ -222,9 +243,8 @@ p {
     margin-bottom: 45px;
 }
 
-@media (max-width: 650px) {
-    .homeList li,
-    p {
+@media (max-width: 850px) {
+    .homeList li {
         font-size: 1.15rem;
     }
 
@@ -253,6 +273,9 @@ p {
 }
 
 
+
+
+
 /*WORK STYLES*/
 
 .workNav {
@@ -276,7 +299,7 @@ p {
     justify-content: flex-end;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
     .workNav ul {
         width: 100%;
         padding: 0 5%;
@@ -404,7 +427,7 @@ p {
     margin-top: 100px;
 }
 
-.top + h3{
+.top + h3 {
     margin-top: 100px;
 }
 
