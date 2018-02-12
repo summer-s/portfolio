@@ -112,6 +112,8 @@ strong {
 
 .homeBlock {
     z-index: 1;
+    max-width: 1000px;
+    width: 80%;
 }
 
 .homeContainer {
