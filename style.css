@@ -340,7 +340,6 @@ strong {
 .workNav li {
     display: inline;
     font-size: .75rem;
-    font-weight: 400;
     font-size: .65rem;
     letter-spacing: .125rem;
     color: #828282;
@@ -353,14 +352,14 @@ strong {
     }
 }
 
-.workNav li:first-of-type {
+.workNav li:first-child {
     margin-right: auto;
     margin-left: 0;
 }
 
-.workNav a:first-of-type {
+a[href^="index.html"] {
     font-weight: 700;
-    margin-left: 0;
+    
 }
 
 .workContainer {
