@@ -70,7 +70,7 @@ h4 {
 }
 
 a {
-    color: #828282;
+    color: #4F4F4F;
     font-weight: 400;
     transition: 1s;
     text-decoration: none;
@@ -150,7 +150,6 @@ strong {
     background-color: none;
     display: block;
     bottom: 0;
-    b
     z-index: -1;
     margin: 0 auto;
     -webkit-transform: rotate(180deg);
@@ -441,20 +440,28 @@ a[href^="index.html"] {
     margin-top: 75px;
 }
 
-#prevnext {
+.prevnext {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: .85em;
     letter-spacing: .1rem;
-    max-width: 700px;
-    margin: 75px auto 30px auto;
+    max-width: 600px;
+    margin: 80px auto 50px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.prevnext a {
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
 }
 
 @media (max-width: 650px) {
-    #prevnext {
+    .prevnext {
         margin-bottom: 0;
         margin-top: 50px;
+        padding-top: 20px;
     }
 }
 
