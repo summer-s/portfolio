@@ -139,28 +139,6 @@ strong {
     margin: 0 auto;
     background-color: none;
 }
-.bgImg2 {
-    background-image: url(images/bgImg4.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background-color: none;
-    display: block;
-    bottom: 0;
-    z-index: -1;
-    margin: 0 auto;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-
-
 
 @media (max-width: 850px) {
     .homeContainer {
@@ -555,7 +533,6 @@ img {
     margin-top: 0;
 }
 
-
 .underText {
     width: 100%;
     margin-top: 20px;
@@ -565,13 +542,6 @@ img {
 .underText + .imgDesc {
     margin-top: 0;
     margin-bottom: 10px;
-}
-
-.endText p {
-    font-size: 1.25rem;
-    padding: 4%;
-    margin: 50px auto 0 auto;
-    background-color: lightgray
 }
 
 .prevnext {
